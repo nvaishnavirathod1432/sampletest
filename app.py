@@ -6,5 +6,5 @@ def index():
 @app.route("/home")
 def home():
     return "Home Page"
-if _name=="main_":
+if __name__=="main_":
     app.run(host='0.0.0.0',port=1000)
