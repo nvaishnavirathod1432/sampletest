@@ -1,6 +1,6 @@
 from flask import Flask,render_template
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route("/")
 def index():
@@ -8,5 +8,5 @@ def index():
 @app.route("/home")
 def home():
     return "home page"
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=10000)
